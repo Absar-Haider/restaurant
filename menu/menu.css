@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+:root{
+    --black : #ffffff;
+    --lightcolor : #ffffff;
+    --text: rgb(184, 196, 195); 
+}
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik Maps', system-ui;
+    font-family: 'Tektur', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+body{
+    background: black;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(/images/header-bg.jpg) left no-repeat ;
+    background-size: cover;
+    z-index: 10000;
+}
+
+header .logo img{
+    height: 50px;
+}
+
+header .icons i{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: var(--lightcolor);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+header .icons i:hover{
+    background: var(--lightcolor);
+    transform: scale(1.1);
+}
+
+section .menu{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+}
+
+.menu .menu-bg{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* -----------------------------------------------RESPONSIVE----------------------------------------------------- */
+
+@media (max-width : 768px){
+
+    header .logo img{
+        height: 7rem;
+    }
+
+    html .icons #menu{
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+
+    header .logo img{
+        height: 7rem;
+    }
+
+}
+
+/* -----------------------------------------------RESPONSIVE END------------------------------------------------- */
